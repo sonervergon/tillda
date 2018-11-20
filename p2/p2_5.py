@@ -17,6 +17,8 @@ def processNumbers(N1, N2, method):
     N1 = abs(N1)
     N2 = abs(N2)
     if method == 'div':
+        if N2 == 0:
+            raise ZeroDivisionError
         N1 = str(abs(N1))
         N2 = str(abs(N2))
     return N1, N2
